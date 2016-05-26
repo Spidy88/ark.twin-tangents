@@ -62,9 +62,6 @@ export default class ContributorsController {
         ];
 
         var totals = {
-            id: 0,
-            ark_player_name: 'Total',
-            tribe_name: '',
             monthly_donation_amount: 0,
             total_donation_amount: 0
         };
