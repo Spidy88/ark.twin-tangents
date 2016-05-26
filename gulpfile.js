@@ -5,7 +5,6 @@ const gutil = require('gulp-util');
 const babel = require('gulp-babel');
 const del = require('del');
 const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const ngAnnotate = require('gulp-ng-annotate');
