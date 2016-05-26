@@ -17,6 +17,8 @@ deployment:
   master:
     branch: master
     commands:
+      - git config --global user.email "the.nick.ferraro+circleci@gmail.com"
+      - git config --global user.name "CircleCI"
       - git add dist/ -f
       - git commit -m v$CIRCLE_BUILD_NUM
       - git tag v$CIRCLE_BUILD_NUM
