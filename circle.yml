@@ -1,0 +1,22 @@
+machine:
+  node:
+    version: 4.4.0
+
+dependencies:
+  override:
+    - npm install -g gulp bower
+    - npm install
+    - gulp
+
+test:
+  override:
+    - npm test
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - git add dist/ -f
+      - git commit -m v$CIRCLE_BUILD_NUM
+      - git tag $CIRCLE_BUILD_NUM
+      - git push git@heroku.com:twin-tangents.git v$CIRCLE_BUILD_NUM:master -f
