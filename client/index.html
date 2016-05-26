@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twin Tangents</title>
+    <link rel="stylesheet" href="styles/vendors.css">
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+<div class='navbar navbar-default navbar-fixed-top'>
+    <div class='container'>
+        <div class='navbar-header'>
+            <a class="navbar-brand" href="/">Twin Tangents</a>
+            <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='#navbar-main'>
+                <span class='icon-bar'></span>
+            </button>
+        </div>
+        <div class='navbar-collapse collapse' id='navbar-main'>
+            <ul class='nav navbar-nav'>
+                <li><a ui-sref="rules">Rules</a></li>
+                <li><a ui-sref="map">Map</a></li>
+                <li><a ui-sref="about">About us</a></li>
+                <li><a ui-sref="contributors">Contributors</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!--
+                <li class="dropdown" role='presentation'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signed in as <%= current_user.name %> <span class="caret"></span></a>
+                    <ul class='dropdown-menu'>
+                        <li><%= link_to 'Profile', '#' %></li>
+                        <li><%= link_to 'Sign out', signout_path %></li>
+                    </ul>
+                </li>
+                <% else %>
+                <li><a href='/auth/steam'><%= image_tag('steam_signin_sm.png') %></a></li>
+                -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class='container'>
+    <div class='page-body'>
+        <!--% if should_show_announcement?(controller) %>
+        <div class='row'>
+            <div class='col-lg-12'>
+                <div class='panel panel-warning panel-announcement'>
+                    <div class='panel-heading'>
+                        <strong>Server funding: Donate if you can</strong>
+                    </div>
+                    <div class='panel-body'>
+                        <p>
+                            Hey everyone! Thanks to those who have donated and to everyone for sticking around and building a great community. We are nearly at our $50/month goal which will pay for the server to stay up. Spidy and I have agreed to always cover half the cost ($25). Any extra money made each month will go towards future funding, absolutely no profit is made.
+                        </p>
+                        <p>
+                            If you have any questions or concerns please reach out to Genzume or Spidy. We will do our best to post news updates to this site and be as transparent as possible. Thanks for playing on Twin Tangents!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--% end %-->
+
+        <div class='row'>
+            <div class='col-lg-8'>
+                <ui-view></ui-view>
+            </div>
+
+            <h2>Server info</h2>
+            <div class='col-lg-4'>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>Support Us</div>
+                    <div class='panel-body'>
+                        <p>
+                            If you'd like to support the server and help the server stay afloat you can donate to our patreon page. All donations/pledges are appreciated but please don't feel obligated. Enjoy the ARK!
+                        </p>
+                        <div class='row text-center'>
+                            <a class='btn btn-success' target='_blank' href='https://www.patreon.com/tylerferraro' role='button'>Pledge</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>ARK PvP Server</div>
+                    <div class='panel-body'>
+                        <div><strong>IP:</strong> <a href="steam://connect/23.108.65.186:21106">23.108.65.186:21106</a></div>
+                        <div><strong>URL:</strong> <a href="steam://connect/ark.twintangents.com:21106">ark.twintangents.com:21106</a></div>
+                        <div><strong>Location:</strong> Chicago, IL</div>
+                    </div>
+                </div>
+
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>Teamspeak</div>
+                    <div class='panel-body'>
+                        <div><strong>URL:</strong> <a href="ts3server://ts.twintangents.com">ts.twintangents.com</a></div>
+                        <div><strong>Direct:</strong> <a href="ts3server://prime7.bluefangsolutions.com:9987">prime7.bluefangsolutions.com:9987</a></div>
+                        <div><strong>Location:</strong> Atlanta, GA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class='navbar navbar-default footer'>
+    <div class='container'>
+        <a href='http://steampowered.com'>Powered by Steam</a>
+    </div>
+</div>
+
+<script src="scripts/vendors.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>

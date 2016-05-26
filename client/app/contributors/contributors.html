@@ -1,0 +1,33 @@
+<h1>Thanks to our Contributors!</h1>
+
+<p>
+    To those of you who have donated I want to give a heartfelt thank you!
+    Because of you the server will continue to run and be updated regularly.
+    I received your real names through Patreon and thus don't know your online name.
+    Please send me a message with your steam name and in game name so I can update the list.
+</p>
+
+<table class='table table-striped table-hover'>
+    <thead>
+    <tr>
+        <th>ARK Player (Tribe)</th>
+        <th class="text-right">Monthly Donation</th>
+        <th class="text-right">Total Contributions</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr ng-repeat="contributor in ctrl.contributors | orderBy: '-total_donation_amount' track by contributor.id">
+        <td>{{ contributor.ark_player_name }}</td>
+        <td class="text-right">${{ contributor.monthly_donation_amount }}</td>
+        <td class="text-right">${{ contributor.total_donation_amount }}</td>
+    </tr>
+
+    <tr>
+        <td><strong>Total</strong></td>
+        <td class="text-right"><strong>${{ ctrl.totals.monthly_donation_amount }}</strong></td>
+        <td class="text-right"><strong>${{ ctrl.totals.total_donation_amount }}</strong></td>
+    </tr>
+
+    </tbody>
+</table>

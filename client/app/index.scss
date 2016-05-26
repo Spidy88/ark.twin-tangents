@@ -1,0 +1,20 @@
+@import "styles/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "styles/bootswatch";
+
+.page-body {
+  margin-top: 5em;
+}
+
+.panel-announcement {
+  margin-bottom: 0 !important;
+}
+
+.footer {
+  margin-top: 2em;
+  margin-bottom: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  padding-top: 1em;
+}
