@@ -19,5 +19,5 @@ deployment:
     commands:
       - git add dist/ -f
       - git commit -m v$CIRCLE_BUILD_NUM
-      - git tag $CIRCLE_BUILD_NUM
+      - git tag v$CIRCLE_BUILD_NUM
       - git push git@heroku.com:twin-tangents.git v$CIRCLE_BUILD_NUM:master -f
