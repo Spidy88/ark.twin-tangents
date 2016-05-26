@@ -1,28 +1,24 @@
-== README
+Twin Tangents: Ark Website
+==========================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The main website for Twin Tangent's Ark community
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+```
+npm install -g bower gulp
+npm install
+bower install
+```
 
-* System dependencies
+## Building the client files
 
-* Configuration
+```
+gulp
+```
 
-* Database creation
+## Starting the server
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+```
+npm start
+```
