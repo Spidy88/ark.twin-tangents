@@ -1,4 +1,4 @@
-export default class ContributorsController {
+class ContributorsController {
     constructor() {
         'ngInject';
 
@@ -18,9 +18,9 @@ export default class ContributorsController {
                 total_donation_amount: 30
             },
             {
-                id: 3,
-                ark_player_name: 'Unknown (Andy M.)',
-                tribe_name: 'Unknown',
+                id: 76561197974176876,
+                ark_player_name: 'Basswalker',
+                tribe_name: 'Sanctity',
                 monthly_donation_amount: 7,
                 total_donation_amount: 21
             },
@@ -58,6 +58,13 @@ export default class ContributorsController {
                 tribe_name: 'Unknown',
                 monthly_donation_amount: 5,
                 total_donation_amount: 10
+            },
+            {
+                id: 76561198131133002,
+                ark_player_name: 'Dubvee',
+                tribe_name: 'DarkBoon Lords',
+                monthly_donation_amount: 5,
+                total_donation_amount: 5
             }
         ];
 
@@ -75,3 +82,5 @@ export default class ContributorsController {
         this.totals = totals;
     }
 }
+
+export default ContributorsController;
