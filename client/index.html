@@ -4,6 +4,8 @@
     <title>Twin Tangents</title>
     <link rel="stylesheet" href="styles/vendors.css">
     <link rel="stylesheet" href="styles/app.css">
+    <script src="scripts/vendors.js"></script>
+    <script src="scripts/app.js"></script>
 </head>
 <body>
 <div class='navbar navbar-default navbar-fixed-top'>
@@ -83,7 +85,7 @@
                         </div>
 
                         <div>
-                            <span><strong>Dune Buggy Racing:</strong> {{ 1464375600 | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD HH:mm A' }}</span>
+                            <span><strong>Dune Buggy Racing:</strong> {{ 1464375600 | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD HH:mm A' }} {{ moment.tz.zone(moment.tz.guess()).abbr(1464375600) }}</span>
                         </div>
                     </div>
                 </div>
@@ -128,7 +130,5 @@
     </div>
 </div>
 
-<script src="scripts/vendors.js"></script>
-<script src="scripts/app.js"></script>
 </body>
 </html>
