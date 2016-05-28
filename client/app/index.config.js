@@ -6,19 +6,25 @@ export default function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: '/partials/home.html'
+            templateUrl: '/partials/home.html',
+            controller: 'HomeController',
+            controllerAs: 'ctrl'
+        })
+        .state('how-to-connect', {
+            url: '/server/how-to-connect',
+            templateUrl: '/partials/how-to-connect.html'
+        })
+        .state('settings', {
+            url: '/server/settings',
+            templateUrl: '/partials/settings.html'
         })
         .state('rules', {
-            url: '/rules',
+            url: '/server/rules',
             templateUrl: '/partials/rules.html'
         })
         .state('map', {
-            url: '/map',
+            url: '/server/map',
             templateUrl: '/partials/map.html'
-        })
-        .state('about', {
-            url: '/about',
-            templateUrl: '/partials/about.html'
         })
         .state('contact', {
             url: '/contact',
@@ -29,5 +35,9 @@ export default function($stateProvider, $urlRouterProvider) {
             templateUrl: '/partials/contributors.html',
             controller: 'ContributorsController',
             controllerAs: 'ctrl'
+        })
+        .state('about', {
+            url: '/about',
+            templateUrl: '/partials/about.html'
         });
 }

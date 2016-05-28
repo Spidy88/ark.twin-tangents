@@ -16,10 +16,18 @@
         </div>
         <div class='navbar-collapse collapse' id='navbar-main'>
             <ul class='nav navbar-nav'>
-                <li><a ui-sref="rules">Rules</a></li>
-                <li><a ui-sref="map">Map</a></li>
-                <li><a ui-sref="about">About us</a></li>
+                <li><a ui-sref="home">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Server <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref="how-to-connect">How to Connect</a></li>
+                        <li><a ui-sref="settings">Settings</a></li>
+                        <li><a ui-sref="rules">Rules</a></li>
+                        <li><a ui-sref="map">Map</a></li>
+                    </ul>
+                </li>
                 <li><a ui-sref="contributors">Contributors</a></li>
+                <li><a ui-sref="about">About Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!--
@@ -65,8 +73,7 @@
                 <ui-view></ui-view>
             </div>
 
-            <h2>Server info</h2>
-            <div class='col-lg-4'>
+            <div class='col-lg-4' style="padding-top: 44px;">
                 <div class='panel panel-default'>
                     <div class='panel-heading'>Support Us</div>
                     <div class='panel-body'>
@@ -80,7 +87,7 @@
                 </div>
 
                 <div class='panel panel-default'>
-                    <div class='panel-heading'>ARK PvP Server</div>
+                    <div class='panel-heading'>ARK PvP Server <small><a ui-sref="how-to-connect">(how to connect)</a></small></div>
                     <div class='panel-body'>
                         <div><strong>IP:</strong> <a href="steam://connect/23.108.65.186:21106">23.108.65.186:21106</a></div>
                         <div><strong>URL:</strong> <a href="steam://connect/ark.twintangents.com:21106">ark.twintangents.com:21106</a></div>

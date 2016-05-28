@@ -1,44 +1,22 @@
-<h1 class='page-header'>Connecting to the Server</h1>
+<h1 class='page-header'>Welcome to Twin Tangent's Ark Server</h1>
 <p>
-    Connecting to the ark server seems to have a weird hitch.
-    When you add the server, use the ip with port 21116 and click search.
-    You'll find the server, add it to your favorites.
-    The game actually runs on port 21106 but for some reason adding it directly doesn't work.
+    We're a small group of game enthusiasts that despise griefers, trolls, and negative influences.
+    If you aren't one of those, please come and enjoy our servers!
+    We've been up and running for a few months now with great success.
+    The community and response to our mission has been fantastic.
+    We're free to play but can only foot so many of the costs ourselves, so if you love what we do <a href="https://www.patreon.com/tylerferraro">contribute back</a>.
+    All money goes to faster servers, more slots, and more hosted games.
 </p>
-<hr />
 
-<div class="text-center">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/oU-z-lM4p4k?VQ=HD720" frameborder="0" allowfullscreen></iframe>
+<h2>Recent Updates</h2>
+<div class="panel panel-default" ng-repeat="update in ctrl.updates track by update.id">
+    <div class="panel-heading">
+        <div class="panel-title">
+            {{ update.title }}
+            <div class="pull-right">{{ update.createdAt }}</div>
+        </div>
+    </div>
+    <div class="panel-body">
+        {{ update.body }}
+    </div>
 </div>
-
-<h1 class='page-header'>Server Settings</h1>
-
-<p>
-    The game itself has great difficulty settings out of the box but we feel there are a few settings that could do
-    with a little bit of tweaking to help even the playing ground for casual gamers and hardcore gamers.
-    Below are the setting changes the server has.
-</p>
-
-<ul>
-    <li>Difficulty 1.0 (120 Max Lvl Dinos, same as official)</li>
-    <li>Taming 1.5</li>
-    <li>Experience 1.5</li>
-    <li>Egg Hatching 1.5 (Eggs hatch 75% faster)</li>
-    <li>Baby Maturation 2.0 (Babies grow up twice as fast)</li>
-    <li>Mating Interval 1.5 (Get fertilized eggs less often)</li>
-    <li>Character Hunger 0.8 (Official was 1.0, get slightly less hungry)</li>
-    <li>Character Thirst 0.8 (Official was 1.0, get slightly less thirsty)</li>
-    <li>Day time is twice as long</li>
-    <li>Night time is half as long</li>
-    <li>No Character Downloads</li>
-    <li>Enabled 3rd Person View</li>
-    <li>Modified day night cycle (see below)</li>
-</ul>
-
-<p>
-    The day night cycle is typically 28 minutes, we've increased this to 45. This means day time will be 30 minutes and night time 15 minutes. Open to changing this for better balance as the community sees fit.
-</p>
-
-<p>
-    We will not be installing any mods during Ark's early access, however we will allow the community to vote on specific events/mods to keep the game interesting. Everyone wants to battle a dragon, we’ll summon one. Missed out on the dodo rex? Get enough people on the server to agree and we’ll add a special event.
-</p>
