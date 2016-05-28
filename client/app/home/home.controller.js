@@ -5,7 +5,7 @@ class HomeController {
         this.updates = [
             {
                 id: 2,
-                title: 'Dune Buggy Races',
+                title: 'Dune Buggy Races (Delayed 1 hour)',
                 body: 'To kick off this new map, we\'ll have Dune Buggy races this Saturday, May 28th at 12pm PST. We\'ll have a couple practice rounds followed by waves of 5 racers. First place wins a Box of Chocolates. Second place wins a Helmet Skin of their choice. Third place wins a potion of their choice.',
                 createdAt: 1464332400
             },
