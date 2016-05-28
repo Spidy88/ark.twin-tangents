@@ -76,16 +76,18 @@
             </div>
 
             <div class='col-lg-4' style="padding-top: 44px;">
-                <div class='panel panel-info'>
+                <div class='panel panel-info' ng-controller="EventsController as ctrl">
                     <div class='panel-heading'>Current &amp; Upcoming Events</div>
                     <div class='panel-body'>
-                        <div>
-                            <span><strong>Dino Boost:</strong> {{ 1464202800 | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD' }} - {{ 1464375600 | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD' }}</span>
-                            <span class="label label-success">Active</span>
-                        </div>
+                        <div ng-repeat="event in ctrl.events track by event.id">
+                            <span ng-if="!ctrl.isOver(event)">
+                                <span>
+                                    <strong>{{ event.name }}</strong>
+                                    <span ng-if="ctrl.isActive(event)" class="label label-success">Active</span>
+                                </span>
 
-                        <div>
-                            <span><strong>Dune Buggy Racing:</strong> {{ 1464465600 | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD h:mm A' }} {{ moment.tz.zone(moment.tz.guess()).abbr(1464375600) }}</span>
+                                <span class="pull-right">{{ event.starts | amFromUnix | amUtc | amLocal | amDateFormat: 'MMM DD' }} ({{ ctrl.duration(event) }})</span>
+                            </span>
                         </div>
                     </div>
                 </div>
