@@ -1,5 +1,5 @@
 {
-  "name": "socialcoder.tv",
+  "name": "ark.twintangents",
   "version": "1.0.0",
   "dependencies": {
     "angular-animate": "~1.5.3",
@@ -9,10 +9,10 @@
     "angular-bootstrap": "~0.14.3",
     "moment": "~2.10.6",
     "animate.css": "~3.4.0",
-    "angular": "~1.5.3"
+    "angular": "~1.5.3",
+    "angular-moment": "1.0.0-beta.6"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "overrides": {
     "bootstrap-sass": {
       "main": [
@@ -27,6 +27,7 @@
     }
   },
   "resolutions": {
-    "angular": "~1.5.3"
+    "angular": "~1.5.3",
+    "angular-moment": "1.0.0-beta.6"
   }
 }

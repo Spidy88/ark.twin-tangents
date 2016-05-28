@@ -9,11 +9,11 @@
 </p>
 
 <h2>Recent Updates</h2>
-<div class="panel panel-default" ng-repeat="update in ctrl.updates track by update.id">
+<div class="panel" ng-class="update.old ? 'panel-default' : 'panel-info'" ng-repeat="update in ctrl.updates track by update.id">
     <div class="panel-heading">
         <div class="panel-title">
             {{ update.title }}
-            <div class="pull-right">{{ update.createdAt }}</div>
+            <div class="pull-right">{{ update.createdAt | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD, YYYY' }}</div>
         </div>
     </div>
     <div class="panel-body">

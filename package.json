@@ -1,5 +1,5 @@
 {
-  "name": "twin-tangents",
+  "name": "ark.twin-tangents",
   "version": "1.0.0",
   "description": "Twin Tangents gaming website",
   "main": "index.js",
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TwinTangents/twin-tangents.git"
+    "url": "git+https://github.com/Spidy88/ark.twin-tangents.git"
   },
-  "author": "Nick Ferraro <nick.ferraro@hackreactor.com>",
+  "author": "Nick Ferraro <the.nick.ferraro@gmail.com>",
   "license": "CC-BY-NC-SA-4.0",
   "bugs": {
     "url": "https://github.com/TwinTangents/twin-tangents/issues"

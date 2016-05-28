@@ -74,14 +74,16 @@
             </div>
 
             <div class='col-lg-4' style="padding-top: 44px;">
-                <div class='panel panel-default'>
-                    <div class='panel-heading'>Support Us</div>
+                <div class='panel panel-info'>
+                    <div class='panel-heading'>Current &amp; Upcoming Events</div>
                     <div class='panel-body'>
-                        <p>
-                            If you'd like to support the server and help the server stay afloat you can donate to our patreon page. All donations/pledges are appreciated but please don't feel obligated. Enjoy the ARK!
-                        </p>
-                        <div class='row text-center'>
-                            <a class='btn btn-success' target='_blank' href='https://www.patreon.com/tylerferraro' role='button'>Pledge</a>
+                        <div>
+                            <span><strong>Dino Boost:</strong> {{ 1464202800 | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD' }} - {{ 1464375600 | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD' }}</span>
+                            <span class="label label-success">Active</span>
+                        </div>
+
+                        <div>
+                            <span><strong>Dune Buggy Racing:</strong> {{ 1464375600 | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD HH:mm A' }}</span>
                         </div>
                     </div>
                 </div>
@@ -101,6 +103,18 @@
                         <div><strong>URL:</strong> <a href="ts3server://ts.twintangents.com">ts.twintangents.com</a></div>
                         <div><strong>Direct:</strong> <a href="ts3server://prime7.bluefangsolutions.com:9987">prime7.bluefangsolutions.com:9987</a></div>
                         <div><strong>Location:</strong> Atlanta, GA</div>
+                    </div>
+                </div>
+
+                <div class='panel panel-success'>
+                    <div class='panel-heading'>Support Us</div>
+                    <div class='panel-body'>
+                        <p>
+                            If you'd like to support the server and help the server stay afloat you can donate to our patreon page. All donations/pledges are appreciated but please don't feel obligated. Enjoy the ARK!
+                        </p>
+                        <div class='row text-center'>
+                            <a class='btn btn-success' target='_blank' href='https://www.patreon.com/tylerferraro' role='button'>Pledge</a>
+                        </div>
                     </div>
                 </div>
             </div>
