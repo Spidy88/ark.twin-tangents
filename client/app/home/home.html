@@ -16,7 +16,6 @@
             <div class="pull-right">{{ update.createdAt | amFromUnix | amUtc | amLocal | amDateFormat:'MMM DD, YYYY' }}</div>
         </div>
     </div>
-    <div class="panel-body">
-        {{ update.body }}
+    <div class="panel-body" btf-markdown="update.body">
     </div>
 </div>

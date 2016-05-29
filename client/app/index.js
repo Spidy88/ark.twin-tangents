@@ -4,7 +4,7 @@ import ContributorsController from './contributors/contributors.controller';
 import HomeController from './home/home.controller.js';
 import EventsController from './events/events.controller.js';
 
-angular.module('ark.twintangents', ['ui.router', 'angularMoment'])
+angular.module('ark.twintangents', ['ui.router', 'angularMoment', 'ngSanitize', 'btford.markdown'])
     .config(config)
     .run(run)
     .controller('ContributorsController', ContributorsController)
