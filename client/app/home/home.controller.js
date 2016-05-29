@@ -19,7 +19,35 @@ Winners:
  * 3rd. Spidy (no reward taken)
 `;
 
+        let newEventsBody = `New events have been planned. I will continue my work on the website for user accounts, notifications, and better event descriptions. For now, the below have been planned:
+
+#### Gathering Boost (3x)
+Just like it says, resource gathering will be boosted for 24 hours. 
+The rate will be 3x the normal rate. 
+I'd make it shorter but I want to make sure every timezone gets a chance to capitalize.
+
+#### Mega Summon
+There will be a few kinds of summoning events. 
+The mega summon is an event in which I summon dinosaurs outside the games normal spawn levels. 
+For example, summoning a level 200 Spino to be tamed or killed. The locations will be random. 
+Only some of the locations will be broadcasted, meaning exploration is your best option. 
+A list of summoned dinos will be provided so you at least know what you are looking for.
+
+#### Galli Lava Race
+Similar to the Pig Races, we'll be riding Gallimimus. 
+I'll spawn in some level 300 Galli's and boost their speed.
+It will be dangerous but oh so fun and the rewards are always worth it.
+Rewards will be announced later as the event draws closer.
+
+Got an event you'd like to see happen? Ping Spidy and he'll see about getting it on the calendar.`;
+
         this.updates = [
+            {
+                id: 3,
+                title: 'New Events Planned',
+                body: newEventsBody,
+                createdAt: 1464489212
+            },
             {
                 id: 2,
                 title: 'Dune Buggy Races (Delayed 1 hour)',
