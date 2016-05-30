@@ -65,6 +65,13 @@ class ContributorsController {
                 tribe_name: 'DarkBoon Lords',
                 monthly_donation_amount: 5,
                 total_donation_amount: 5
+            },
+            {
+                id: 76561198218626891,
+                ark_player_name: 'Goliath',
+                tribe_name: 'The Horde',
+                monthly_donation_amount: 5,
+                total_donation_amount: 5
             }
         ];
 
