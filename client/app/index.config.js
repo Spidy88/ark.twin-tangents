@@ -1,4 +1,4 @@
-export default function($stateProvider, $urlRouterProvider) {
+export default function($stateProvider, $urlRouterProvider, markdownConverterProvider) {
     'ngInject';
 
     $urlRouterProvider.otherwise('/');
@@ -39,5 +39,9 @@ export default function($stateProvider, $urlRouterProvider) {
         .state('about', {
             url: '/about',
             templateUrl: '/partials/about.html'
+        });
+
+        markdownConverterProvider.config({
+            parseImgDimensions: true
         });
 }

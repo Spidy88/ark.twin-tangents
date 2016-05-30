@@ -46,7 +46,13 @@ Let's see if we can be the number one thread again!
 If you are enjoying the server please do us a favor and upvote our post.
 It pushes us to the top of the list so we get noticed more often.
 
-####[Link to Post](https://www.reddit.com/r/ARK/comments/4jtq4d/ark_survival_evolved_unofficialprivate_server/d3oeszq)`;
+####[Link to Post](https://www.reddit.com/r/ARK/comments/4jtq4d/ark_survival_evolved_unofficialprivate_server/d3oeszq)
+
+**Update**
+
+Make sure you press the upvote on the comment, not the upvote on the main thread.
+
+![upvote](https://cloud.githubusercontent.com/assets/1076168/15639110/a17a1454-25dc-11e6-9978-ead8e13f8a79.png =100%x*)`;
 
         this.updates = [
             {
