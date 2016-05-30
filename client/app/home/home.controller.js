@@ -21,19 +21,19 @@ Winners:
 
         let newEventsBody = `New events have been planned. I will continue my work on the website for user accounts, notifications, and better event descriptions. For now, the below have been planned:
 
-#### Gathering Boost (3x)
+##### Gathering Boost (3x)
 Just like it says, resource gathering will be boosted for 24 hours. 
 The rate will be 3x the normal rate. 
 I'd make it shorter but I want to make sure every timezone gets a chance to capitalize.
 
-#### Mega Summon
+##### Mega Summon
 There will be a few kinds of summoning events. 
 The mega summon is an event in which I summon dinosaurs outside the games normal spawn levels. 
 For example, summoning a level 200 Spino to be tamed or killed. The locations will be random. 
 Only some of the locations will be broadcasted, meaning exploration is your best option. 
 A list of summoned dinos will be provided so you at least know what you are looking for.
 
-#### Galli Lava Race
+##### Galli Lava Race
 Similar to the Pig Races, we'll be riding Gallimimus. 
 I'll spawn in some level 300 Galli's and boost their speed.
 It will be dangerous but oh so fun and the rewards are always worth it.
@@ -41,7 +41,20 @@ Rewards will be announced later as the event draws closer.
 
 Got an event you'd like to see happen? Ping Spidy and he'll see about getting it on the calendar.`;
 
+        let redditPostBody = `Our usual post to Reddit has been created.
+Let's see if we can be the number one thread again!
+If you are enjoying the server please do us a favor and upvote our post.
+It pushes us to the top of the list so we get noticed more often.
+
+####[Link to Post](https://www.reddit.com/r/ARK/comments/4jtq4d/ark_survival_evolved_unofficialprivate_server/d3oeszq)`;
+
         this.updates = [
+            {
+                id: 4,
+                title: 'Reddit Post is Up',
+                body: redditPostBody,
+                createdAt: 1464571142
+            },
             {
                 id: 3,
                 title: 'New Events Planned',
