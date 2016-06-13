@@ -4,39 +4,52 @@ export default function($stateProvider, $urlRouterProvider, markdownConverterPro
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('home', {
+        .state('root', {
+            abstract: true,
+            templateUrl: '/partials/index.html',
+            controller: 'AppController',
+            controllerAs: 'app',
+            resolve: {
+                currentUser: function(userService) {
+                    'ngInject';
+                    
+                    return userService.getCurrentUser(false);
+                }
+            }
+        })
+        .state('root.home', {
             url: '/',
             templateUrl: '/partials/home.html',
             controller: 'HomeController',
             controllerAs: 'ctrl'
         })
-        .state('how-to-connect', {
+        .state('root.how-to-connect', {
             url: '/server/how-to-connect',
             templateUrl: '/partials/how-to-connect.html'
         })
-        .state('settings', {
+        .state('root.settings', {
             url: '/server/settings',
             templateUrl: '/partials/settings.html'
         })
-        .state('rules', {
+        .state('root.rules', {
             url: '/server/rules',
             templateUrl: '/partials/rules.html'
         })
-        .state('map', {
+        .state('root.map', {
             url: '/server/map',
             templateUrl: '/partials/map.html'
         })
-        .state('contact', {
+        .state('root.contact', {
             url: '/contact',
             templateUrl: '/partials/contact.html'
         })
-        .state('contributors', {
+        .state('root.contributors', {
             url: '/contributors',
             templateUrl: '/partials/contributors.html',
             controller: 'ContributorsController',
             controllerAs: 'ctrl'
         })
-        .state('about', {
+        .state('root.about', {
             url: '/about',
             templateUrl: '/partials/about.html'
         });

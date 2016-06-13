@@ -1,0 +1,126 @@
+<div class='navbar navbar-default navbar-fixed-top'>
+    <div class='container'>
+        <div class='navbar-header'>
+            <a class="navbar-brand" href="/">Twin Tangents</a>
+            <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='#navbar-main'>
+                <span class='icon-bar'></span>
+            </button>
+        </div>
+        <div class='navbar-collapse collapse' id='navbar-main'>
+            <ul class='nav navbar-nav'>
+                <li><a ui-sref="root.home">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Server <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref="root.how-to-connect">How to Connect</a></li>
+                        <li><a ui-sref="root.settings">Settings</a></li>
+                        <li><a ui-sref="root.rules">Rules</a></li>
+                        <li><a ui-sref="root.map">Map</a></li>
+                    </ul>
+                </li>
+                <li><a ui-sref="root.contributors">Contributors</a></li>
+                <li><a ui-sref="root.about">About Us</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" role='presentation' ng-if="app.isAuthenticated()">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        {{ app.currentUser.name }} <span class="caret"></span>
+                    </a>
+                    <ul class='dropdown-menu'>
+                        <!--li><a ui-sref="root.profile">Profile</a></li-->
+                        <li><a href="/auth/logout">Logout</a></li>
+                    </ul>
+                </li>
+
+                <li ng-if="!app.isAuthenticated()">
+                    <a href='/auth/steam'><img src="assets/images/steam_signin_sm.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class='container'>
+    <div class='page-body'>
+        <!--% if should_show_announcement?(controller) %>
+        <div class='row'>
+            <div class='col-lg-12'>
+                <div class='panel panel-warning panel-announcement'>
+                    <div class='panel-heading'>
+                        <strong>Server funding: Donate if you can</strong>
+                    </div>
+                    <div class='panel-body'>
+                        <p>
+                            Hey everyone! Thanks to those who have donated and to everyone for sticking around and building a great community. We are nearly at our $50/month goal which will pay for the server to stay up. Spidy and I have agreed to always cover half the cost ($25). Any extra money made each month will go towards future funding, absolutely no profit is made.
+                        </p>
+                        <p>
+                            If you have any questions or concerns please reach out to Genzume or Spidy. We will do our best to post news updates to this site and be as transparent as possible. Thanks for playing on Twin Tangents!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--% end %-->
+
+        <div class='row'>
+            <div class='col-lg-8'>
+                <ui-view></ui-view>
+            </div>
+
+            <div class='col-lg-4' style="padding-top: 44px;">
+                <div class='panel panel-info' ng-controller="EventsController as ctrl">
+                    <div class='panel-heading'>Current &amp; Upcoming Events</div>
+                    <div class='panel-body'>
+                        <div ng-repeat="event in ctrl.events track by event.id">
+                            <span ng-if="!ctrl.isOver(event)">
+                                <span>
+                                    <strong>{{ event.name }}</strong>
+                                    <span ng-if="ctrl.isActive(event)" class="label label-success">Active</span>
+                                </span>
+
+                                <span class="pull-right">{{ event.starts | amFromUnix | amUtc | amLocal | amDateFormat: 'MMM DD' }} ({{ ctrl.duration(event) }})</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>ARK PvP Server <small><a ui-sref="root.how-to-connect">(how to connect)</a></small></div>
+                    <div class='panel-body'>
+                        <div><strong>IP:</strong> <a href="steam://connect/23.108.65.186:21106">23.108.65.186:21106</a></div>
+                        <div><strong>URL:</strong> <a href="steam://connect/ark.twintangents.com:21106">ark.twintangents.com:21106</a></div>
+                        <div><strong>Location:</strong> Chicago, IL</div>
+                    </div>
+                </div>
+
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>Teamspeak</div>
+                    <div class='panel-body'>
+                        <div><strong>URL:</strong> <a href="ts3server://ts.twintangents.com">ts.twintangents.com</a></div>
+                        <div><strong>Direct:</strong> <a href="ts3server://prime7.bluefangsolutions.com:9987">prime7.bluefangsolutions.com:9987</a></div>
+                        <div><strong>Location:</strong> Atlanta, GA</div>
+                    </div>
+                </div>
+
+                <div class='panel panel-success'>
+                    <div class='panel-heading'>Support Us</div>
+                    <div class='panel-body'>
+                        <p>
+                            If you'd like to support the server and help the server stay afloat you can donate to our patreon page. All donations/pledges are appreciated but please don't feel obligated. Enjoy the ARK!
+                        </p>
+                        <div class='row text-center'>
+                            <a class='btn btn-success' target='_blank' href='https://www.patreon.com/tylerferraro' role='button'>Pledge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class='navbar navbar-default footer'>
+    <div class='container'>
+        <a href='http://steampowered.com'>Powered by Steam</a>
+    </div>
+</div>
