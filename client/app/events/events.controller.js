@@ -26,6 +26,18 @@ class EventsController {
                 name: 'Galli Lava Race',
                 starts: 1465678800,
                 ends: 1465682400
+            },
+            {
+                id: 6,
+                name: 'Gathering Boost (3x)',
+                starts: 1465844400,
+                ends: 1465930800
+            },
+            {
+                id: 7,
+                name: 'Dino Boost (Tame/Breed/Mature)',
+                starts: 1466190000,
+                ends: 1466449200
             }
         ];
 
