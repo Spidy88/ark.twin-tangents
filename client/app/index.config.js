@@ -52,6 +52,14 @@ export default function($stateProvider, $urlRouterProvider, markdownConverterPro
         .state('root.about', {
             url: '/about',
             templateUrl: '/partials/about.html'
+        })
+        .state('root.events', {
+            url: '/events',
+            templateUrl: '/partials/events.html'
+        })
+        .state('root.voting', {
+            url: '/voting',
+            templateUrl: '/partials/voting.html'
         });
 
         markdownConverterProvider.config({
