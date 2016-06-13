@@ -43,7 +43,7 @@ module.exports = app;
 
 function verifySession(req, res, next) {
     if (!req.session) {
-        return next(new Error('oh no'));
+        return next(new Error('Server is unable to create a session. Please contact an administrator.'));
     }
 
     next();
