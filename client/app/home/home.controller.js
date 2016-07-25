@@ -56,6 +56,7 @@ Make sure you press the upvote on the comment, not the upvote on the main thread
 
         let serverDownBody = `Our host took the server down for "Emergency Data Migration". 
 Apparently the hard drives were failing.
+
 **The good news:**
  * The new server will be on better, faster, and more performant hardware
  
