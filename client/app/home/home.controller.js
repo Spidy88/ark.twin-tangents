@@ -54,7 +54,27 @@ Make sure you press the upvote on the comment, not the upvote on the main thread
 
 ![upvote](https://cloud.githubusercontent.com/assets/1076168/15639110/a17a1454-25dc-11e6-9978-ead8e13f8a79.png =100%x*)`;
 
+        let serverDownBody = `Our host took the server down for "Emergency Data Migration". 
+Apparently the hard drives were failing.
+**The good news:**
+ * The new server will be on better, faster, and more performant hardware
+ 
+**The bad news:**
+ * It is estimated to be down for 8 hours
+ * The IP address will change
+ * The port number will change
+ 
+As soon as I have the new information, I will get it posted to this website.
+We'll handle the backlash of lost items, dinos, and deaths as best we can once we see what state the server is in once its back up.
+Thanks for your patience!`;
+
         this.updates = [
+            {
+                id: 5,
+                title: 'Server Down Temporarily',
+                body: serverDownBody,
+                createdAt: 1469410280
+            },
             {
                 id: 4,
                 title: 'Reddit Post is Up',
