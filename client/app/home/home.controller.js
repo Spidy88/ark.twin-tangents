@@ -69,7 +69,29 @@ As soon as I have the new information, I will get it posted to this website.
 We'll handle the backlash of lost items, dinos, and deaths as best we can once we see what state the server is in once its back up.
 Thanks for your patience!`;
 
+        let serverUpBody = `Looks like our host is done with maintenance.
+I say "looks like" because they never actually emailed me to say it was done, but my account has been unflagged :| .
+To give everyone the best chance of survival, I will not turn the server back on until 9pm PST.
+That gives you 1 hour to look up the new IP and prepare to login.
+It's the best I can do, given the circumstances.
+We'll do our best to fix any issues caused by the outage.
+
+**REMEMBER**
+
+The IP has changed. 
+I've updated it on the website but you won't be able to search it until the server gets turned on at 9PM PST.
+I don't know if this migration fixed the "search" problem, so checkout the "How to Connect" page if you have issues.
+Just remember to use the new IP in the outlined steps.
+
+Enjoy the Ark!`;
+
         this.updates = [
+            {
+                id: 6,
+                title: 'Server Back Up at 9pm PST',
+                body: serverUpBody,
+                createdAt: 1469415247
+            },
             {
                 id: 5,
                 title: 'Server Down Temporarily',
