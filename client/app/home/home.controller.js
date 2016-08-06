@@ -85,7 +85,25 @@ Just remember to use the new IP in the outlined steps.
 
 Enjoy the Ark!`;
 
+let olympicBoostBody = `To celebrate the olympics we're having a massive boost event! 
+We're merging our regular Gathering Boost with our Dino Boost and sprinkling on a bit of XP Boost. 
+Enjoy!
+
+**Rates:**
+
+* XP: 2.5x
+* Tame: 2.5x
+* Hatch: 4.0x
+* Mature: 4.0x
+* Gather: 3.0x`;
+
         this.updates = [
+            {
+                id: 7,
+                title: 'Olympic Boost Weekend',
+                body: olympicBoostBody,
+                createdAt: 1470453556 
+            },
             {
                 id: 6,
                 title: 'Server Back Up at 9pm PST',
