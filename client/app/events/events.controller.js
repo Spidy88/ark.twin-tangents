@@ -38,6 +38,12 @@ class EventsController {
                 name: 'Dino Boost (Tame/Breed/Mature)',
                 starts: 1466190000,
                 ends: 1466449200
+            },
+            {
+                id: 8,
+                name: 'Olympic Boost',
+                starts: 1470452400,
+                ends: 1470625200
             }
         ];
 
