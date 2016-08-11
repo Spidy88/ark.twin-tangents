@@ -44,6 +44,12 @@ class EventsController {
                 name: 'Olympic Boost',
                 starts: 1470452400,
                 ends: 1470625200
+            },
+            {
+                id: 9,
+                name: 'Olympic Boost',
+                starts: 1470769200,
+                ends: 1470974400
             }
         ];
 
