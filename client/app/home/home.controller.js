@@ -97,7 +97,25 @@ Enjoy!
 * Mature: 4.0x
 * Gather: 3.0x`;
 
+let endOfEraBody = `**It is with a heavy heart that I must announce the end of Twin Tangent's Ark server.**
+
+We had one heck of a run, and one of the best communities on the gaming internet.
+We've made many friends that we hope to keep, even after the Ark server is gone and but a distant memory.
+
+For those of you that would like to keep playing where you left off, I've included all the [server files](https://www.dropbox.com/s/ueyz4y74gtdbib3/Ark_TheCenter.zip?dl=0) you'll need.
+A quick Google search will show you where to put these files if you want to play Local Single Player, Local Multi Player, or even start your own Hosted Server.
+And of course you can always reach out to Spidy and ask for help.
+
+Until we meet again,
+##GG`;
+
         this.updates = [
+            {
+                id: 8,
+                title: 'End of an Era',
+                body: endOfEraBody,
+                createdAt: 1474942874
+            },
             {
                 id: 7,
                 title: 'Olympic Boost Weekend',
